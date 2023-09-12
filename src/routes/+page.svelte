@@ -1,9 +1,5 @@
 <script>
-	import Weather from '../lib/Weather.svelte';
-
   export let data;
-
-
 </script>
 <svelte:head>
 	<title>ASCII Weather Forecast</title>
@@ -22,5 +18,8 @@
 
     <button class="border border-black w-fit">Submit</button>
   </form>
-  <Weather />
+
+
+  <p>{data.location.latitude}</p>
+  <p>{data.location.longitude}</p>
 </div>
